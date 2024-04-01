@@ -1,4 +1,5 @@
 import random
+
 def asd():
     rr = random.randint
     rc = random.choice
