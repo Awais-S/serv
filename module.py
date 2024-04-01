@@ -8,5 +8,5 @@ def asd():
     ads = random.choice(wo)
     uab = "Mozilla/5.0 (Linux; Android " + wo + " Build/" + str(random.randint(1000, 9999)) + ".0." + str(random.randint(1, 999)) + ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
     uaxb = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; " + wo + ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome 4.0/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 300)) + " Mobile Safari/537.36"
-    ua = (rc([uab,uaxb]))
+    ua = rc([uab,uaxb])
     return ua
