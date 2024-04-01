@@ -1,26 +1,12 @@
 import random
 
-ugen = []
-for xd in range(5000):
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['5','6','7','8','9','10','11','12'])
-    if b in ['5', '6', '7', '8', '9']:
-        z=random.choice(['0', '1'])
-        bv=b+'.'+z+'.'+z
-    else:
-        bv=b
-    B=['GT-', 'SM-']
-    c=random.choice(B)
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    application_version = str(random.randint(111,396))+'.0.0.'+str(random.randrange(10,49))+'.'+str(random.randint(111,396))
-    V=str(random.randrange(11,99))
-    uas=f'{aa} {bv}; {c}{d}{e}{f} Build/{d}{f}{V}{f}; wv) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uas)
+def asd():
+		rr = random.randint
+		rc = random.choice
+		wo = ['V2120','SM-G973C', 'SM-A217N','M2006J10C','V2065','RMX1821','SM-T970','NAM-LX9','SM-T547U','LG-H870S','BQ-4030G','SPH-L720','LYA-L0C','SM-N9760','CPH1937','SM-T387W','SM-T503','M2010J19SG','LGV36','SM-A9200','RMX1809','CPH2063','SM-J810M','LG-RS988','CPH2495','SM-A505FN','SM-X205','V2110','EVR-L29','RMX2156','CPH3987','PPA-LX1','LDN-AL20','SM-M426B','BQ-5519G','V2118','LM-F100','SM-J701M','SM-T976B']
+		ads = random.choice(wo)
+		uab = "Mozilla/5.0 (Linux; Android " + ads + " Build/" + str(random.randint(1000, 9999)) + ".0." + str(random.randint(1, 999)) + ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
+		uaxb = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; " + ads + ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome 4.0/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 300)) + " Mobile Safari/537.36"
+		ua = [uab,uaxb]
+		return ua
+asd()
