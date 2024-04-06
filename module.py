@@ -37,7 +37,7 @@ for agents in range(10000):
     u2 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; Infinix {models_inf} Build/{buld_re}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_inf} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{fb_hua};]"
     u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {models_vivo}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{chrome_oppo} Mobile Safari/537.36 VivoBrowser/18.9.0.0"
     u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))} {models_re} Build/{buld_re}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_re} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{fb_hua};]"
-    u5 = f"Mozilla/5.0 (Linux; U; Android {str(rr(4, 13))}; zh-CN; {models_sam} Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_sam} UCBrowser/11.6.4.950 UCBS/2.11.1.20 Mobile Safari/537.36 AliApp(TB/7.0.2) WindVane/8.0.0 1080X1920"
+    u5 = f"Mozilla/5.0 (Linux; U; Android {str(rr(4, 13))}; zh-CN; {models_sam} Build//{buld_re}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_sam} UCBrowser/11.6.4.950 UCBS/2.11.1.20 Mobile Safari/537.36 AliApp(TB/7.0.2) WindVane/8.0.0 1080X1920"
     
     ua = rc([u1, u2, u3, u4, u5])
     ugen.append(ua)
