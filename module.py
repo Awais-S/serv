@@ -29,7 +29,7 @@ for agents in range(10000):
 	# Samsung device details
 	ad_sam = rc(['10', '7.0', '14', '11'])
 	models_sam = rc(['SM-M136B', 'SM-N975F','SM-M325FV','SM-J337A','SM-A516V','SM-G977N','SM-A2070','SM-A207M', 'SM-S901B', 'SM-A013G', 'SM-T820', 'SM-T555','SM-G7810', 'SM-T315', 'SM-S727VL', 'SM-J610F','SM-J610F','SM-J610G','SM-J610FN','SM-A736B','SM-N915A'])
-	ch_sam = f"{str(rr(52, 124))}.0.{str(rr(2200, 6500))}.{str(rr(11, 199))}"
+	ch_sam = f"{str(rr(50, 499))}.0.{str(rr(2200, 6500))}.{str(rr(11, 499))}"
 	
 	# Generating user-agent strings
 	u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))} {model_oppo} Build/{buld_re}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{chrome_oppo} Mobile Safari/537.36"
