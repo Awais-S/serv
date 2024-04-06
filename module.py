@@ -5,7 +5,6 @@ ugen = []
 for agents in range(10000):
     rr = random.randint
     rc = random.choice
-    
     # Oppo device details
     and_oppo = rc(['14', '11', '10'])
     model_oppo = rc(['CPH3837', 'CPH3803', 'CPH2209', 'CPH2271', 'CPH1955', 'CPH2339', 'CPH2095', 'CPH2077', 'CPH2065', 'CPH2069', 'CPH2059', 'CPH1099', 'CPH1091', 'CPH1073', 'CPH1065', 'CPH1979'])
