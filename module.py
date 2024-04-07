@@ -1,3 +1,5 @@
+import random
+ugen = []
 for agents in range(100000):
 	rr = random.randint
 	rc = random.choice
