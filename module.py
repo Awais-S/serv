@@ -1,8 +1,6 @@
 import random
-
-ugen = []
-
-for agents in range(10000):
+ugen=[]
+for ua in range(10000):
     rr = random.randint
     rc = random.choice
     a_m=rc(['11','13','6.0.1','6.0','7.0','14','12','9'])
@@ -22,7 +20,18 @@ for agents in range(10000):
     u1=f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {m_m} Build/{b_m}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c_m} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{f_m};]"
     u2=f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {m_o} Build/{b_o}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c_o} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{f_m};]"
     aV=str(random.choice(range(10,20)))
-    u4=f"Mozilla/5.0 (Windows; U; Windows NT {str(random.choice(range(5,10)))}.1; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{str(random.choice(range(8,12)))}.0.{str(random.choice(range(111,661)))}.0 Safari/534.{aV}"
+    u4=f"Mozilla/5.0 (Windows; U; Windows NT {str(random.choice(range(5,10)))}.1; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/"+str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
     u3=f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {m_w} Build/{b_w}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c_w} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{f_m};]"
-    ua=rc([u1,u2,u3,u4])
+    aV=str(random.choice(range(10,20)))
+    A=f"Mozilla/5.0 (Windows; U; Windows NT {str(random.choice(range(5,10)))}.1; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
+    bV=str(random.choice(range(1,36)))
+    bx=str(random.choice(range(34,38)))
+    bz=f"5{bx}.{bV}"
+    B=f"Mozilla/5.0 (Windows NT {str(random.choice(range(5,10)))}.{str(random.choice(['2','1']))}) AppleWebKit/{bz} (KHTML, like Gecko) Chrome/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
+    cV=str(random.choice(range(1,36)))
+    cx=str(random.choice(range(34,38)))
+    cz=f"5{cx}.{cV}"
+    C=f"Mozilla/5.0 (Windows NT 6.{str(random.choice(['2','1']))}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
+    D=f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
+    ua=rc([u1,u2,u3,u4,A,B,C,D])
     ugen.append(ua)
