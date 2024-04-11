@@ -17,5 +17,5 @@ for agents in range(10000):
     ub = random.choice(uas)
     efg = random.choice(ft)
     so = random.choice(su)
-    ua = "Dalvik/2.1.0 (Linux; U; Android "+str(random.randint(4, 13))+"; "+efg+" Build/"+so+") [FBAN/FB4A;FBAV/"+str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/137.0.0.35.99;FBBV/394719276;FBDM/{density=2.75,width=720,height=1600};FBLC/"+ap+";FBRV/284916396;FBCR/"+fd+";FBMF/realme;FBBD/realme;FBPN/com.facebook.katana;FBDV/RMX2200;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+    ua = "Dalvik/2.1.0 (Linux; U; Android "+str(random.randint(4, 13))+"; "+efg+" Build/"+so+") [FBAN/FB4A;FBAV/"+str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/176.0.0.35.99;FBBV/394719276;FBDM/{density=2.75,width=720,height=1280};FBLC/"+ap+";FBRV/174957286;FBCR/"+fd+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G398FN;FBSV/9.0;FBOP/1;FBCA/arm64-v8a:;]"
     ugen.append(ua)
