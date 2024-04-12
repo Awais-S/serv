@@ -6,11 +6,11 @@ for agents in range(10000):
 	
 	# Oppo device details
 	and_oppo = rc(['14', '11', '10'])
-	model_oppo = rc(['CPH2069', 'CPH2131', 'CPH2239','CPH2273','CPH2309', 'CPH1701', 'CPH1912', 'CPH1905', 'CPH2067', 'CPH2099', 'CPH2263', 'CPH1729', 'CPH1939', 'CPH2059', 'CPH2121', 'CPH2203'])
+	model_oppo = rc(['CPH1717', 'CPH1915', 'CPH1987','CPH2213','CPH1609', 'CPH1725', 'CPH1825', 'CPH2025', 'CPH2173', 'CPH1719', 'CPH1877', 'CPH1611', 'CPH2043', 'CPH2036', 'CPH2091', 'CPH2089'])
 	chrome_oppo = f"{str(rr(80, 444))}.0.{str(rr(3000, 6500))}.{str(rr(11, 499))}"
 	
 	# Infinix device details
-	models_inf = rc(['X401', 'X652A', 'X5010', 'X690B', 'X604','X6819'])
+	models_inf = rc(['X606D', 'X620', 'X627V', 'X690B', 'X571','X5514D'])
 	ch_inf = f"{str(rr(80, 999))}.0.{str(rr(3200, 6500))}.{str(rr(11, 999))}"
 	
 	# Facebook Hua device details
@@ -18,16 +18,16 @@ for agents in range(10000):
 	
 	# Vivo device details
 	and_vivo = f"{str(rr(11, 14))}"
-	models_vivo = rc(['V2021', 'V2023', 'V2027','V2025', 'V2006', 'V2080A','vivoX9L','V2206', 'V2072A', 'V1914A','vivo 1940','vivo 1935','V2126','V2012A'])
+	models_vivo = rc(['V2207A', 'vivo 1904', 'V2055A','vivo 2006', 'vivo 1910', 'V2132A','vivo 2010','V2126', 'V2040', 'V2238','vivo X21UD A','vivo X21A','V2073A','V1963A'])
 	
 	# Realme device details
-	models_re = rc(['RMX3388', 'RMX1809', 'RMX1803','RMX1827','RMX2032', 'RMX2063', 'RMX2151','RMX3241','RMX1811', 'RMX2180', 'RMX3201','RMX2021'])
+	models_re = rc(['RMX2170', 'RMX2163', 'RMX3085','RMX3521','RMX3472', 'RMX3491', 'RMX2185','RMX2189','RMX2195', 'RMX2180', 'RMX1941','RMX3203'])
 	buld_re = rc(['QP1A.190711.020', 'QKQ1.190918.001', 'SP1A.210812.016', 'QTG3.200617.002', 'SQ3A.220705.0040', 'RP1A.200720.011', 'UKQ1.230924.001', 'UKQ1.230917.001', 'TP1A.220624.014'])
 	ch_re = f"{str(rr(120, 999))}.0.{str(rr(3000, 6500))}.{str(rr(11, 999))}"
 	
 	# Samsung device details
 	ad_sam = rc(['10', '7.0', '14', '11'])
-	models_sam = rc(['SM-A013G', 'SM-A022M','SM-G950F','SM-A202F','SM-S124DL','SM-A025A','SM-A037U','SM-A105FN','SM-A115AZ','SM-A136U','SM-A205GN','SM-A300H','SM-A336E', 'SM-A5009', 'SM-A500XZ', 'SM-A520W','SM-A516V', 'SM-A536V','SM-G6200','SM-A700YD','M2006C3LVG','M2006C3LII','21061119AL','M2105K81AC'])
+	models_sam = rc(['SM-G887F', 'SM-G885S','SM-A530N','SM-A810YZ','SM-A320FL','SM-A225M','SM-A215U1','SM-A205GN','SM-M105G','SM-J701F','SM-J710FN','SM-J737T1','SM-J730FM', 'SM-S727VL', 'SM-N770F', 'SM-N975X','SM-A326K', 'Y300-0100','Y221-U12','NEO-L29','MHA-L09','NXT-AL10','CET-LX9','OCE-AN50,'22101316UG','M2101K9AG','2109119DG','M2102K1G','21081111RG'])
 	ch_sam = f"{str(rr(52, 124))}.0.{str(rr(2200, 6500))}.{str(rr(11, 199))}"
 	
 	# Generating user-agent strings
