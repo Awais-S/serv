@@ -33,6 +33,7 @@ for agents in range(10000):
     model_sam_et = f"SM-A705{et}"
     models_sam = rc([model_sam_et, f"SM-A707{et}", f"SM-A715{et}", f"SM-A716{et}", f"SM-A810{et}", f"SM-A805{et}", f"SM-A536{et}", "SM-A205GN", f"SM-M205{et}", f"SM-J710{et}", f"SM-J737{et}", f"SM-J730{et}", "STK-AL00", "RMO-NX3", "JAT-LX3", "CLT-L09", f"SM-A307{et}", "LM-X510L", "INE-LX2", "M2004J7BC", "M2011K2C", "220233L2G", "21061119AG", "21051182G"])
     ch_sam = f"{str(rr(52, 124))}.0.{str(rr(2200, 6500))}.{str(rr(11, 199))}"
+    ewg = rc([models_sam,models_re,models_vivo,models_inf,model_oppo])
     
     # Generating user-agent strings
     u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {model_oppo} Build/{buld_re}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{chrome_oppo} Mobile Safari/537.36"
@@ -40,6 +41,7 @@ for agents in range(10000):
     u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {models_vivo}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{chrome_oppo} Mobile Safari/537.36 VivoBrowser/18.9.0.0"
     u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4, 13))}; {models_re} Build/{buld_re}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_re} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{fb_hua};]"
     u5 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; {models_sam}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome 4.0/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 900)) + " Mobile Safari/537.36"
+    u6 = f"Mozilla/5.0 (Linux; Android {ewg} Build/" + str(random.randint(1000, 9999)) + ".0." + str(random.randint(1, 999)) + ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome 4.0/" + str(random.randint(50, 999)) + ".0." + str(random.randint(1000, 4900)) + "." + str(random.randint(40, 140)) + " Mobile Safari/537.36"
     
-    ua = rc([u1, u2, u3, u4, u5])
+    ua = rc([u1, u2, u3, u4, u5, u6])
     ugen.append(ua)
