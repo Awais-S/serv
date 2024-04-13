@@ -30,7 +30,8 @@ for agents in range(10000):
     # Samsung device details
     ad_sam = rc(['10', '7.0', '14', '11'])
     et = rc(['U','U1','F','G','S','N','FN'])
-    models_sam = f"{str(rc(['SM-A705{et}', 'SM-A707{et}','SM-A715{et}','SM-A716{et}','SM-A810{et}','SM-A805{et}','SM-A536{et}','SM-A205GN','SM-M205{et}','SM-J710{et}','SM-J737{et}','SM-J730{et}','STK-AL00','RMO-NX3','JAT-LX3','CLT-L09','SM-A307{et}','LM-X510L','INE-LX2','M2004J7BC','M2011K2C','220233L2G','21061119AG','21051182G'])))}"
+    model_sam_et = f"SM-A705{et}"
+    models_sam = rc([model_sam_et, f"SM-A707{et}", f"SM-A715{et}", f"SM-A716{et}", f"SM-A810{et}", f"SM-A805{et}", f"SM-A536{et}", "SM-A205GN", f"SM-M205{et}", f"SM-J710{et}", f"SM-J737{et}", f"SM-J730{et}", "STK-AL00", "RMO-NX3", "JAT-LX3", "CLT-L09", f"SM-A307{et}", "LM-X510L", "INE-LX2", "M2004J7BC", "M2011K2C", "220233L2G", "21061119AG", "21051182G"])
     ch_sam = f"{str(rr(52, 124))}.0.{str(rr(2200, 6500))}.{str(rr(11, 199))}"
     
     # Generating user-agent strings
